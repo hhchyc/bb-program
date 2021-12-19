@@ -1,0 +1,50 @@
+
+.box2{
+    width: 100%;
+    z-index: 5;
+}
+.text1{
+    width: 100%;
+    z-index: 1;
+    /* background-color: blue; */
+    /* overflow: hidden; */
+    position: relative;
+    bottom: 0px;
+    /* line-height: 800px; */
+}
+#bg1{
+    background-image: url(../piture/walk/1.jpg);
+    background-size:100% ;
+}
+.text1 p{   
+    z-index: 5;
+    opacity: 1;
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 800px;
+    color: white;
+    font-size: 30px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: -0.3px;
+    position: sticky;
+    top: 100px;
+    transition:all 0.7s;
+  }
+  .text1 p span{
+      z-index: 4;
+      padding: 35px;
+      border-radius: 30px;
+      background-color: rgba(0, 0, 0, 0.5);;
+  }
+
+ .boxLast{
+    width: 100%;
+    height: 150px;
+    background-color: #262a31;
+}

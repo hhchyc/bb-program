@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --percentage: 0%;
+}
+.transition_none *{
+    -webkit-transition:none!important;
+    -moz-transition:none!important;
+    -ms-transition:none!important;
+    -o-transition:none!important;
+    transition:none!important;
+}
+body {
+    width: 1903px;
+    height: 1000px;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+}
+.boxFirst{
+    width: 100%;
+    height: 100px;
+    background-color: #262a31;
+    position: fixed;
+    z-index: 10;
+}
+.banner{
+    width: 75%;
+    height: 100px;
+    margin: 0 12.5%;
+    background-color: #262a31;
+    display: flex;
+    justify-content: space-between;
+}
+.bankuai{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bankuai>a:first-child{
+    width: 125px;
+    height: 50px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 20px;
+    margin: 25px 10px 0px 10px;
+    position: relative;
+    transition-property:all;
+    transition-duration:0.7s;
+    transition-timing-function:ease-out;
+}
+.bankuai>a:first-child:hover{
+    background-color: rgb(228, 148, 161);
+}
+.bankuai>a:first-child:hover~div.triangle_border_up{
+    transform:rotate(180deg);
+}
+.bankuai>a:first-child:hover~ul.sqare1{
+    opacity:1;
+    top: 110px;
+}
+.sqare1{
+    width: 125px;
+    height: 150px;
+    position: fixed;
+    top: 95px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262a31;
+    border-radius: 15px;
+    opacity:0;
+    transition-property:all;
+    transition-duration:0.7s;
+    transition-timing-function:ease-out;
+}
+.sqare1 li{
+    color: white;
+    display: inline;
+    line-height: 25px;
+    margin: 3px 0;
+}
+.sqare1>li>a:first-child{
+    font-size: 19px;
+    color: white;
+}
+
+/* 三角形 */
+.triangle_border_up{
+    width:0;
+    height:0;
+    border-width:0 8px 8px;
+    border-style:solid;
+    border-color:transparent transparent white;/*透明 透明  灰*/
+    position:relative;
+    margin: 10px 0px;
+    transition:all 0.7s;
+    transform:rotate(0deg);
+}
